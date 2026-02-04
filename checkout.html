@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Care Essentials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="site-nav">
+        <div class="brand">Care Essentials</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <a class="btn secondary" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+        </div>
+      </nav>
+      <h1>Secure Checkout</h1>
+      <p>Complete your order with calm, simple steps.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="notice">This checkout is a demo. Payments are not processed.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid">
+        <div class="card" style="grid-column: span 2;">
+          <h2>Delivery Details</h2>
+          <form>
+            <div class="form-grid">
+              <div>
+                <label for="full-name">Full name</label>
+                <input id="full-name" type="text" placeholder="First and last name" />
+              </div>
+              <div>
+                <label for="phone">Phone number</label>
+                <input id="phone" type="tel" placeholder="+41 79 000 00 00" />
+              </div>
+              <div>
+                <label for="address">Street address</label>
+                <input id="address" type="text" placeholder="Street and number" />
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input id="city" type="text" placeholder="City" />
+              </div>
+              <div>
+                <label for="postcode">Postcode</label>
+                <input id="postcode" type="text" placeholder="Postcode" />
+              </div>
+              <div>
+                <label for="delivery">Delivery time</label>
+                <select id="delivery">
+                  <option>Morning (9:00 - 12:00)</option>
+                  <option>Afternoon (12:00 - 15:00)</option>
+                  <option>Late afternoon (15:00 - 18:00)</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="notes">Delivery notes</label>
+              <textarea id="notes" placeholder="Door code, call ahead, or care notes"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="card summary">
+          <h2>Order Summary</h2>
+          <ul data-order-list></ul>
+          <p><strong>Total:</strong> <span data-order-total>CHF 0.00</span></p>
+          <h3>Payment Method</h3>
+          <div>
+            <label>
+              <input type="radio" name="payment" checked /> PayPal
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="payment" /> Credit / Debit Card (Stripe)
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="payment" /> Invoice for family caregiver
+            </label>
+          </div>
+          <p>Your payment information is always protected.</p>
+          <button class="btn" type="button" data-complete-order>Place Order</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Customer Support</h3>
+          <p>Email: support@careessentials.ch</p>
+          <p>Phone: +41 44 555 21 90</p>
+        </div>
+        <div>
+          <h3>Help</h3>
+          <p><a href="faq.html">Simple FAQ</a></p>
+          <p><a href="delivery.html">Delivery Information</a></p>
+        </div>
+        <div>
+          <h3>Privacy &amp; Terms</h3>
+          <p><a href="privacy.html">Privacy Policy</a></p>
+          <p><a href="terms.html">Terms of Service</a></p>
+        </div>
+      </div>
+      <p>A service designed with care for everyday life.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

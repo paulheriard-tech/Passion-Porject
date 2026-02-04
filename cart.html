@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | Care Essentials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="site-nav">
+        <div class="brand">Care Essentials</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <a class="btn secondary" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+        </div>
+      </nav>
+      <h1>Your Cart</h1>
+      <p>Review your essentials before checkout.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="grid">
+        <div class="card" style="grid-column: span 2;">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody data-cart-table></tbody>
+          </table>
+        </div>
+        <div class="card summary" data-cart-summary>
+          <p>Loading cart summary...</p>
+        </div>
+      </div>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a class="btn secondary" href="shop.html">Continue Shopping</a>
+        <a class="btn" href="checkout.html">Go to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Customer Support</h3>
+          <p>Email: support@careessentials.ch</p>
+          <p>Phone: +41 44 555 21 90</p>
+        </div>
+        <div>
+          <h3>Help</h3>
+          <p><a href="faq.html">Simple FAQ</a></p>
+          <p><a href="delivery.html">Delivery Information</a></p>
+        </div>
+        <div>
+          <h3>Privacy &amp; Terms</h3>
+          <p><a href="privacy.html">Privacy Policy</a></p>
+          <p><a href="terms.html">Terms of Service</a></p>
+        </div>
+      </div>
+      <p>A service designed with care for everyday life.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
