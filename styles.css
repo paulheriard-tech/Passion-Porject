@@ -1,0 +1,288 @@
+:root {
+  --ink: #1c2b33;
+  --soft-blue: #e6f1fb;
+  --soft-green: #e7f3ea;
+  --soft-beige: #f7f4ef;
+  --accent: #2f6b7c;
+  --accent-dark: #1f4d5c;
+  --card: #ffffff;
+  --border: #d7e1e6;
+  --shadow: 0 4px 14px rgba(24, 44, 55, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--soft-beige);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: 3px solid #9ac2d3;
+  outline-offset: 2px;
+}
+
+header {
+  background: var(--soft-blue);
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.nav-cta {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 2.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 220px;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn.secondary {
+  background: #fff;
+  color: var(--accent-dark);
+  border: 2px solid var(--accent);
+}
+
+.reassurance {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: var(--shadow);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  color: var(--accent-dark);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.6rem;
+}
+
+.product-image {
+  background: var(--soft-green);
+  border-radius: 16px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid #d4e6da;
+}
+
+.product-image svg {
+  width: 70px;
+  height: 70px;
+  color: var(--accent-dark);
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.product-btn {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+}
+
+.family-section {
+  background: var(--soft-blue);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.family-section .btn {
+  margin-top: 1rem;
+}
+
+.page-header {
+  background: var(--soft-blue);
+  padding: 2rem 0 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  background: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary {
+  background: var(--soft-green);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.notice {
+  background: #fff6e5;
+  border: 1px solid #f2d7a5;
+  padding: 1rem 1.3rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+footer {
+  background: #f0ebe4;
+  padding: 2.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.trust-note {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
